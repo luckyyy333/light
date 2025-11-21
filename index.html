@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灯泡
+    </title>
+</head>
+<body>
+    <img id="image" onclick="toggleBulb()" src="image.gif" width="100" height="180">
+    <p>点 击 灯 泡 打 开 或 关 闭 这 盏 灯</p>
+
+    <script>
+        function toggleBulb() {
+            const bulb = document.getElementById("image");
+            if (bulb.src.includes("image.gif")) {
+                bulb.src = "image1.gif";
+                console.log("开灯");
+            } else {
+                bulb.src = "image.gif";
+                console.log("关灯");
+            }
+        }
+    </script>
+</body>
+</html>
